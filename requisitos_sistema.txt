@@ -1,0 +1,5 @@
+# No sistema Debian 12.7.0 instale os seguintes pacotes:
+
+* arduino
+* python3-serial
+* libserialport-dev
