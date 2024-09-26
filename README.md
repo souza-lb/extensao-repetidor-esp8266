@@ -43,34 +43,22 @@ Com o git instalado ou pelo navegador clone esses dois repositórios abaixo:
 
 extensao-repetidor-esp8266 ( repositório principal do projeto )
 ```bash
-git clone https://github.com/souza-lb/extensao-repetidor-esp8266
+$ git clone https://github.com/souza-lb/extensao-repetidor-esp8266
 ```
 
 Dentro da pasta do primeiro repositório que você encontra:  
 
-![Pasta repositório extensão-buscado-main](/imagens/arquivos-repositorio.png)  
+![Pasta repositório extensão-repetidor-esp8266-main](/imagens/arquivos-repositori.png)  
 
-Acese a pasta "/src/main/resorces/" e edite o arquivo .env no seu interior.  
-Neste arquivo você define o nome para busca, dados de email e seu bot Telegram  
+Abra o IDE Arduino. Na aba preferências adicione a url referente à placa ESP8266 conforme abaixo:
 
-O arquivo segue esse padrão:
-
-```
-NOME_BUSCA=Nome Exemplo
-TOKEN_TELEGRAM=23027461345:ABGJhxjekNG9mzldklkddjkdhar8jfazRGga4
-CHAT_ID_TELEGRAM=3529167404
-EMAIL_ENVIO=exemplo@gmail.com
-SENHA_EMAIL=evuk iwnk kgdf zywn
-EMAIL_DESTINO=exemplo@exemplo.com
-```
-Insira seus dados salve o arquivo e retorna a pasta raiz. Vamos iniciar o processo de construção do arquivo "jar" com as dependências.
-
-Execute agora :
 
 ```bash
-sudo mvn clean
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ```
-Se tudo der certo você receberá esta saída:  
+
+![Opção Preferências](/imagens/repositorio-placa.png)  
+
 
 ![Saída comando mvn clean](/imagens/mvn-clean.png)  
 
