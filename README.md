@@ -142,6 +142,12 @@ Agora clique no botão verde "Obter dispositivos". A aplicação exibirá a list
 ![Tela Inicial Gerenciador Ativo](/imagens/gerenciador-repetidor-esp8266-ativo.png)  
 
 
+Caso apresente uma mensagem de erro como abaixo, verifique ser você conectou ao ponto de acesso correto. Tente também reiniciar a placa.  
+
+
+![Tela erro](/imagens/tela-tratamento-erro.png)  
+
+
 Caso a placa apresente problemas você pode reinicializá-lo remotamente, foi implementado um endpoint para que mediante o fornecimento de senha o dispositivo possa ser reinicializado. Esta função é bem útil principalmnente se a placa for instalada em um local de difícil acesso. Abaixo segue tela para confirmação de reinicialização:   
 
 
