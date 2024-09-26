@@ -71,9 +71,10 @@ Execute agora :
 sudo mvn package
 ```
 
-Se tudo ocorrer como esperado você receberá esta saída:  
+Volte para área de bibliotecas e instale a ESP-Essentials:
 
-![Saída comando mvn package](/imagens/mvn-package.png)  
+
+![ESP Essentials](/imagens/esp-essentials.png)  
 
 Agora acesse a nova pasta "target", nela você encontrar os arquivos "jar" do projeto:  
 
