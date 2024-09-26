@@ -80,13 +80,29 @@ Abra o arquivo "repetidor-esp8266.ino" no seu Arduino IDE e envie para a placa.
 
 ![IDE Arduino](/imagens/ide-arduino-includes.png)  
 
-Copie o arquivo "extensao-buscado-1.0.0-jar-with-dependencies.jar" para uma pasta de sua preferência.  
+Após reiniciar a plca consulte a saída serial (Neste caso a rede wifi já está configurada).
 
-Para iniciar o programa execute no terminal:  
+![Saída serial](/imagens/monitor-serial.png)   
+
+Observe no IDE Arduino os Endpoints. Eles são um elemento importante que será utilizado na nossa aplicação Python:
+
 
 ```bash
-java -jar extensao-buscado-1.0.0-jar-with-dependencies.jar
+// Função para configurar o servidor web
+void configurarServidorWeb() {
+    // Define as rotas do servidor
+    servidor.on("/", HTTP_GET, handleRoot);
+    servidor.on("/reset-password", HTTP_GET, handleResetPassword);
+    servidor.on("/confirm-reset", HTTP_POST, handleConfirmReset);
+    servidor.on("/set-password", HTTP_POST, handleSetPassword);
+    servidor.on("/devices", HTTP_POST, handleListDevices);
+    servidor.on("/devices-json", HTTP_POST, handleListDevicesJson); // Novo endpoint
+    servidor.on("/reiniciar", HTTP_POST, handleReiniciar);
+}
 ```
+
+![Endpoints Aplicação](/imagens/endpoints-importantes.png)   
+
 
 Se o software iniciar dentro de alguns instantes você receberá uma janela de notificação conforme abaixo:  
 
