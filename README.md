@@ -110,6 +110,17 @@ void configurarServidorWeb() {
 ![Endpoints Aplicação](/imagens/endpoints-importantes.png)   
 
 
+Conecte ao ponto de acesso abra o navegador e você será redirecionado para a tela abaixo:   
+
+![Tela inicial ponto acesso](/imagens/tela-inicial-configuracao-repetidor.png)   
+
+Configure a rede que você deseja repetir:   
+
+![Tela redes disponíveis](/imagens/tela-configuracao-repetidor-redes-disponiveis.png)   
+
+
+Após cadastrar reinicie sua placa e conecte ao ponto de acesso "NomeRede+Repetidor", utilize a senha de rede repetida.
+
 Abra o navegador e cadastre sua senha para uso da aplicação conforme as imagens a seguir (Apenas com a senha será possível obter dados do ponto de acesso):
 
 ![Cadastro de senha](/imagens/tela-cadastro-senha-app-consulta.png)    
