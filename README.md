@@ -104,9 +104,14 @@ void configurarServidorWeb() {
 ![Endpoints Aplicação](/imagens/endpoints-importantes.png)   
 
 
-Se o software iniciar dentro de alguns instantes você receberá uma janela de notificação conforme abaixo:  
+Abra o navegador e cadastre sua senha para uso da aplicação conforme as imagens a seguir (Apenas com a senha será possível obter dados do ponto de acesso):
 
-![Janela alerta](/imagens/janela-alerta-app.png)  
+![Cadastro de senha](/imagens/tela-cadastro-senha-app-consulta.png)    
+
+A seguir você receberá a tela de confirmação de cadastro:
+
+![Cadastro confirmado](/imagens/tela-cadastro-senha-app-confirmacao.png)  
+
 
 Se você clicar no botão "Abrir PDF" você receberá uma janela conforme abaixo:  
 
