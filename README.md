@@ -130,7 +130,29 @@ A seguir você receberá a tela de confirmação de cadastro:
 ![Cadastro confirmado](/imagens/tela-cadastro-senha-app-confirmacao.png)  
 
 
-Agora execute o aplicativo "app.py", informe a senha cadastrada no passo anterior e informe também o ip do ponto de acesso. Se não souber qual consulte a saída serial. A placa está configurada para fornecer essa informação na inicialização.
+Agora execute o aplicativo "app.py", informe a senha cadastrada no passo anterior e informe também o ip do ponto de acesso. Se não souber qual consulte a saída serial. A placa está configurada para fornecer essa informação na inicialização. 
+
+
+![Tela Inicial Gerenciador](/imagens/gerenciador-repetidor-esp8266.png)  
+
+
+Agora clique no botão verde "Obter dispositivos". A aplicação exibirá a lista de dispositivos conectados ao ponto de acesso. Exibirá também a potência do sinal da rede repetida. Repare que a cor do valor do sinal varia de acordo com a sua potência atual.   
+
+
+![Tela Inicial Gerenciador Ativo](/imagens/gerenciador-repetidor-esp8266-ativo.png)  
+
+
+Caso a placa apresente problemas você pode reinicializá-lo remotamente, foi implementado um endpoint para que mediante o fornecimento de senha o dispositivo possa ser reinicializado. Esta função é bem útil principalmnente se a placa for instalada em um local de difícil acesso. Abaixo segue tela para confirmação de reinicialização:   
+
+
+![Tela Reinicialização](/imagens/confirmacao-reinicio.png)   
+
+
+Processo de reinicialização em curso:   
+
+
+![Tela Reinicialização em curso](/imagens/reinicio-realizado.png)
+
 
 
 
