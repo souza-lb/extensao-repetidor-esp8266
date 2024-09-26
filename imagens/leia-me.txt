@@ -1,0 +1,1 @@
+Pasta com arquivos de imagens utilizadas na ajuda do projeto.
