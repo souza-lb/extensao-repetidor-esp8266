@@ -130,116 +130,13 @@ A seguir você receberá a tela de confirmação de cadastro:
 ![Cadastro confirmado](/imagens/tela-cadastro-senha-app-confirmacao.png)  
 
 
-Se você clicar no botão "Abrir PDF" você receberá uma janela conforme abaixo:  
-
-![Janela arquivo PDF](/imagens/janela-arquivo-pdf-do.png)  
-
-O software utilizará o seu visualizador de arquivos "PDF" padrão.
-
-Em alguns instantes você receberá sua notificação por Telegram conforme abaixo:  
-
-![Notificação Telegram](/imagens/notificacao-telegram.png)
-
-
-Em seguinda você receberá sua notificação por E-Mail conforme abaixo:  
-
-![Notificação E-Mail](/imagens/notificacao-email.png)  
-
-
-<h2>Como rodar o projeto utilizando o Docker ?</h2>  
-
-Com a vantagem de não necessitar de alterações significativas no sistema host.<p>
-A imagem utilizada no contêiner docker encapsula todas as dependências da aplicação.  
-
-
-Realize as etapas anteriores incluindo o passo para gerar o arquivo "jar"
-
-Agora acesse a pasta do segundo repositório que você clonou (extensao-buscado-docker)
-
-Copie o seu "fat jar" para a pasta conforme abaixo:  
-
-![Pasta repositório extensão-buscado-docker-main](/imagens/pasta-extensao-buscado-docker-main.png)  
-
-Abra um terminal na pasta raiz do repositorio que você clonou e adicionou o arquivo "jar".
-
-Dê a permissão para que o conteiner tenha acesso aos recursos gráficos do X11 ( Para Windows consulte a ajudo do seu sistema ):
-
-```bash
-$ xhost +local:docker
-```
-
-Para criar a imagem docker execute neste terminal:  
-
-```bash
-$ sudo docker-compose build
-```
-
-Você terá uma saída como abaixo:  
-
-![Saída comando docker-compose build](/imagens/docker-compose-build.png)  
-
-Isso vai damorar um pouco na primera vez pois vai baixar a imagem para o repositório local.
-
-Agora execute no terminal:
-
-```bash
-$ sudo docker-compose up
-```
-Você também pode rodar o comando acima com o parâmetro -d como resultado seu terminal fica livre:
-
-```bash
-$ sudo docker-compose up -d
-```
-
-Você receberá uma saída conforme abaixo:  
-
-![Saída comando docker-compose up](/imagens/docker-compose-up.png)  
-
-Neste ponto seu sóftware já está rodando. Em alguns segundo a janela de notificação abrirá.
-
-Ao final do uso remova a permissão concedida anteriormene com:
-
-```bash
-$ xhost -local:docker
-```
-
-<h2>Como rodar o projeto usando o IDE Eclipse ?</h2>
-
-Utilize a opção para importar um projeto existente maven conforme abaixo:  
-
-![Janela inicial inportação Maven Eclipse](/imagens/eclipse-projeto-maven-existente.png)  
-
-Avançe para a próxima tela conforme abaixo:  
-
-![Janela Maven Eclipse POM](/imagens/eclipse-projeto-maven-existente-pom.png)  
-
-Rode a classe principal "Main.java"  
-
-Esta classe concentra as principais funções da aplicação. Nela você define os horários de agendamento e serviços de notificação que você deseja utilizar.  
-
-![Eclipse classe Main](/imagens/classe-main-eclipse.png)  
-
-Seu programa já está funcionando:  
-
-![Janela Eclipse rodando](/imagens/classe-main-eclipse-rodando.png)  
-
-<h2>Solução de Problemas</h2>  
-
-A aplicação utiliza um sistema de log para facilitar a solução de problemas. Consulte a pasta  
-"log" na raiz do projeto. Verifique o arquivo de "buscado.log" nos techos que apresentarem a ocorrência  
-"ERRO". Ao lado da ocorrência será fornecida uma descrição do erro apresentado.  
-
-<h3>Erros Frequentes</h3>
-
-* Erro biblioteca DotEnv. (Solução: Certifique que o arquivo ".env" está na pasta "/src/main/env/" e está corretamente editado).
-* Erro ao rodar "mvn package". (Solução: Certifique que possui instalado o Apache Maven com "$ sudo apt install maven").
-* Java não localizado. (Solução: Cetifique que possui o OpenJDK 17 ou superior instalado com "$ sudo apt install openjdk-17-jdk").
+Agora execute o aplicativo "app.py", informe a senha cadastrada no passo anterior e informe também o ip do ponto de acesso. Se não souber qual consulte a saída serial. A placa está configurada para fornecer essa informação na inicialização.
 
 
 
 Este repositório foi criado por: <b>Leonardo Bruno de Souza Silva</b><br>
 <b>Matrícula 202301011744</b><br>
-<b>Projeto de Extensão BuscaDO da Disciplina Java Orientado à Objeto</b><br>
+<b>Projeto de Extensão Repetidor ESP8266 da Disciplina Aplic. de Cloud, Iot e Indústria 4.0 em Python</b><br>
 202301011744@alunos.estacio.br<br>
 <b>souzalb@proton.me</b>
 
