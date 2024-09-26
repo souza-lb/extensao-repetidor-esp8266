@@ -46,9 +46,9 @@ extensao-repetidor-esp8266 ( repositório principal do projeto )
 $ git clone https://github.com/souza-lb/extensao-repetidor-esp8266
 ```
 
-Dentro da pasta do primeiro repositório que você encontra:  
+Dentro da pasta do repositório que você encontra:  
 
-![Pasta repositório extensão-repetidor-esp8266-main](/imagens/arquivos-repositori.png)  
+![Pasta repositório extensão-repetidor-esp8266-main](/imagens/arquivos-repositorio.png)  
 
 Abra o IDE Arduino. Na aba preferências adicione a url referente à placa ESP8266 conforme abaixo:
 
@@ -60,7 +60,10 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ![Opção Preferências](/imagens/repositorio-placa.png)  
 
 
-![Saída comando mvn clean](/imagens/mvn-clean.png)  
+Agora instale a biblioteca referente à sua placa conforme abaixo:
+
+
+![Biblioteca Placa](/imagens/gestao-placas.png)  
 
 Execute agora :
 
