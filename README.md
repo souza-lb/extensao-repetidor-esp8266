@@ -39,7 +39,7 @@ execute no terminal:
 $ sudo apt install git python3 python3-virtualenv arduino python3-serial libserialport-dev
 ```
 
-Com o git instalado ou pelo navegador clone esses dois repositórios abaixo:
+Com o git instalado ou pelo navegador clone o repositório abaixo:
 
 extensao-repetidor-esp8266 ( repositório principal do projeto )
 ```bash
@@ -76,9 +76,9 @@ Volte para área de bibliotecas e instale a ESP-Essentials:
 
 ![ESP Essentials](/imagens/esp-essentials.png)  
 
-Agora acesse a nova pasta "target", nela você encontrar os arquivos "jar" do projeto:  
+Abra o arquivo "repetidor-esp8266.ino" no seu Arduino IDE e envie para a placa.
 
-![Pasta target](/imagens/pasta-target.png)  
+![IDE Arduino](/imagens/ide-arduino-includes.png)  
 
 Copie o arquivo "extensao-buscado-1.0.0-jar-with-dependencies.jar" para uma pasta de sua preferência.  
 
