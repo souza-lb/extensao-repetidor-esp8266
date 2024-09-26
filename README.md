@@ -27,7 +27,13 @@ Para criar o ambiente você vai precisar basicamente de:
 * Placa ESP8266 na versão 3 ( opcionais: Cabo(s) usb para alimentação, case(s) para proteção da placa).
 * Git
 
-Sistema Operacional Utilizado:  GNU/Linux Debian 12.7.0  
+Placas utilizadas no Projeto:   
+
+![Placas ESP8266 e Cases](/imagens/placa-esp8266-case.jpg)   
+
+Cases com impressão 3D utilizados para proteção das placas:   
+
+![Cases](/imagens/esp8266-cases.jpg)  
 
 
 <h2>Como rodar o projeto ?</h2>
